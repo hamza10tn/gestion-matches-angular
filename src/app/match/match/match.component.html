@@ -1,0 +1,40 @@
+<form [formGroup]="fg">
+  <label>Date</label>
+  <input type="date" formControlName="Date">
+  <div *ngIf="fg.get('Date')?.invalid && fg.get('Date')?.touched">
+    <div *ngIf="fg.get('Date')?.errors?.['required']">La date est obligatoire</div>
+    <div *ngIf="fg.get('Date')?.errors?.['invalidDate']">La date doit etre sup ou egale a la date d'aujourdhui</div>
+  </div>
+
+  <label>Heure</label>
+  <input type="time" formControlName="Heure">
+  <div *ngIf="fg.get('Heure')?.invalid && fg.get('Heure')?.touched">
+    <div *ngIf="fg.get('Heure')?.errors?.['required']">L'Heure est obligatoire</div>
+  </div>
+
+
+  <label>Lieu</label>
+  <input type="text" formControlName="Lieu">
+  <div *ngIf="fg.get('Lieu')?.invalid && fg.get('Lieu')?.touched">
+    <div *ngIf="fg.get('Lieu')?.errors?.['required']">Le Lieu est obligatoire</div>
+
+  </div>
+
+  <label>Equipe à domicile</label>
+  <select formControlName="EquipeA">
+    <option *ngFor="let team of teams" [value]="team">{{team.nom}}</option>
+  </select>
+  <div *ngIf="fg.get('EquipeA')?.invalid && fg.get('EquipeA')?.touched">
+    <div *ngIf="fg.get('EquipeA')?.errors?.['required']">EquipeA est obligatoire</div>
+  </div>
+
+  <label>Equipe à l'extérieur</label>
+  <select formControlName="EquipeB">
+    <option *ngFor="let team of teams" [value]="team">{{team.nom}}</option>
+  </select>
+  <div *ngIf="fg.get('EquipeB')?.invalid && fg.get('EquipeB')?.touched">
+    <div *ngIf="fg.get('EquipeB')?.errors?.['required']">EquipeB est obligatoire</div>
+  </div>
+
+  <input type="submit" value="soumetre" [disabled]="fg.invalid" (click)="addmatch(fg.value)">
+</form>

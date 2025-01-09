@@ -1,0 +1,86 @@
+{
+  "equipe": [
+    {
+      "id": 1,
+      "nom": "Equipe 1",
+      "natif": "Senior"
+    },
+    {
+      "id": 2,
+      "nom": "Equipe 2",
+      "natif": "Junior"
+    },
+    {
+      "id": 3,
+      "nom": "Equipe 3",
+      "natif": "Senior"
+    },
+    {
+      "id": 4,
+      "nom": "Equipe 4",
+      "natif": "Junior"
+    }
+  ],
+  "match": [
+    {
+      "id": 3
+    },
+    {
+      "Date": "2025-01-07",
+      "Heure": "10:10",
+      "Lieu": "bardo",
+      "EquipeA": "[object Object]",
+      "EquipeB": "[object Object]",
+      "date": "2025-01-07",
+      "heure": "10:10",
+      "lieu": "bardo",
+      "equipeA": "[object Object]",
+      "equipeB": "[object Object]",
+      "id": 4
+    },
+    {
+      "Date": "2025-01-07",
+      "Heure": "10:12",
+      "Lieu": "ghazela",
+      "EquipeA": "[object Object]",
+      "EquipeB": "[object Object]",
+      "date": "2025-01-07",
+      "heure": "10:12",
+      "lieu": "ghazela",
+      "id": 5
+    },
+    {
+      "Date": "2025-01-02",
+      "Heure": "10:13",
+      "Lieu": "zz",
+      "EquipeA": "[object Object]",
+      "EquipeB": "[object Object]",
+      "date": "2025-01-02",
+      "heure": "10:13",
+      "lieu": "zz",
+      "id": 6
+    },
+    {
+      "Date": "2025-01-08",
+      "Heure": "10:30",
+      "Lieu": "aa",
+      "EquipeA": "[object Object]",
+      "EquipeB": "[object Object]",
+      "date": "2025-01-08",
+      "heure": "10:30",
+      "lieu": "aa",
+      "id": 7
+    },
+    {
+      "Date": "2025-01-08",
+      "Heure": "12:41",
+      "Lieu": "radessss",
+      "EquipeA": "[object Object]",
+      "EquipeB": "[object Object]",
+      "date": "2025-01-08",
+      "heure": "12:41",
+      "lieu": "radessss",
+      "id": 8
+    }
+  ]
+}
